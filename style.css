@@ -1,0 +1,1016 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "DM Sans", "Integral CF" ,sans-serif;
+    background-color: #fff;
+    line-height: 1.5;
+    font-size: 16px;
+}
+:root{
+    --text-color: #565656;
+    --black-color: #000000;
+    --white-color: #FFFFFF;
+    --purple-color:#3D00B7;
+    --light-white-color: #2639ED;
+}
+
+ul{
+    text-decoration: none;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+}
+
+/* navbar */
+
+nav.navbar{
+    padding: 20px;
+}
+
+nav.navbar .container{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    border-bottom: 1px #F4F4F4 solid;
+}
+.navbar .container .logo{
+    padding: 5px;
+    margin-right: 5px;
+
+
+}
+.logo a h2{
+    color: #3D00B7;
+
+}
+.navbar .container .nav-menu ul{
+    display: flex;
+    border-left: 1px #F4F4F4 solid; 
+    padding-left: 5px;
+
+}
+.navbar .nav-menu ul li a{
+    margin-right: 10px;
+    color: #000000;
+
+}
+.nav-search{
+    position: relative;
+}
+.nav-search input{
+    border: 1px #EFEFEF solid ;
+    padding: 10px 5px;
+    border-radius: 15px;
+    
+}
+.nav-search button {
+    position: absolute;
+    right: 0;
+    border: none;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: #EFEFEF;
+    transition: 0.5s;
+}
+.nav-search button i {
+
+}
+.navbar .nav-button{
+    padding: 10px;
+}
+.nav-button button{
+    border: 1px var(--purple-color) solid;
+    padding: 10px;
+    border-radius: 20px;
+    
+}
+.nav-button button:first-child{
+    background-color: #3D00B7;
+    color: #fff;
+}
+.nav-button button:last-child{
+    background-color: #fff;
+    color: #3D00B7;
+}
+
+/* Hero */
+
+.hero{
+    margin: 40px 40px;   
+    padding: 20px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.hero .container{ 
+    display: flex;
+    margin-bottom: 50px;  
+}
+.hero-card{
+    width: 50%;
+}
+
+.hero .container .hero-title{
+    margin: 10px 0;
+    width: 60%;
+    
+}
+.hero-title h2{
+    margin: 10px 0;
+    font-size: 40px ;
+    font: bold;
+    line-height: 1.2;
+}
+.hero-title p {
+    margin-bottom: 20px;
+}
+.hero-title button{
+    padding: 15px 20px;
+    border-radius: 20px;
+    margin: 15px 0;
+}
+.hero .hero-grid{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, 80px);
+    margin-bottom: 30px;
+}
+.hero .hero-card{
+
+}
+.hero .hero-images{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position:relative;
+  min-height: 350px;
+  min-width: 300px;
+  max-width: 500px;
+  max-height: 500px ;
+}
+.hero-images .hero-sm-img{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    z-index: 6;
+    left: 0;
+    top: 40%;
+    
+}
+.hero .hero-img{
+    max-width: 100%;
+    max-height: 100%;
+    
+    height: 400px;
+    width: 400px;
+    position: absolute;
+}
+
+.hero .hero-img img{
+   
+
+}
+.hero-img.first-img{
+   z-index: 5;
+   left: 0;
+   ;
+}
+.hero-img.first-img .name-curency{
+    z-index: 8;
+    position: absolute;
+    border-radius: 15px;
+    color: var(--white-color);
+    margin: 5px;
+    padding: 5px;
+}
+.hero-img.first-img .name-curency .person-img{
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+}
+
+.hero-img.first-img .curency-img{
+    
+    z-index: 8;
+    position: absolute;
+    border-radius: 15px;
+    bottom: 0;
+    top: 70%;
+}
+.hero-img.second-img{
+   left: 5%;
+   z-index: 4;
+}
+.hero-img.third-img{
+    left: 10%;
+    z-index: 3;
+}
+
+/* Transaction 2 */
+    .transaction{
+        margin: 50px 10px ;
+        margin-top: 60px;
+        padding: 20px;
+        background-color: #D9E0EC33;
+
+    }
+    .transaction .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+    .transaction .transaction-card{
+        max-width: 400px;
+        position: relative;
+    }
+    .transaction .card svg{
+        display: inline-block;
+        position: absolute;
+        left: 0;
+        top: 10%;
+        
+    }
+    .transaction .card h4{
+        display: inline-block;
+        margin: 0 5px;
+        margin-left: 40px;
+        padding: 10px;
+        width: 70%;
+        line-height: 100%;
+        font-weight: bold;
+        
+    }
+
+    .transaction .card p {
+        width: 80%;
+        line-height: 160%;
+    }
+    /* stock 3 main */
+    .stock{
+        margin: 50px 0; 
+        display: flex;
+        
+
+    }
+    .stock .container{
+
+        
+        /* display: grid;
+        grid-template-columns: 1fr 0.8fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 1rem;
+        text-align: center; */
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    .main-card{
+        
+    }
+    .main-card .main-img{
+        max-width: 400px;
+        max-height: 420px;
+        min-height: 150px;
+        min-height: 150px;
+    }
+    .main-card .main-text{
+        display: flex;
+        position: relative;
+        margin: 20px 0
+    }
+    
+    .main-text .small-text{
+        
+
+    }
+    .main-text h3{
+        font-size: 18px;
+        
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: 50px;
+        margin-right: 10px;
+    }
+    .main-text p.first-paragraph{
+        position: absolute;
+        bottom: 0;
+        left: 55px;
+    }
+    .main-text .small-profile svg{
+        display: inline;
+        position: absolute;
+        right: 70px;
+        bottom: 0;
+    }
+    .main-text  .small-profile p:last-child{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        
+    }
+    
+    .main-text  .small-profile p:first-child{
+        position: absolute;
+        top: 10%;
+        right: 0;
+        margin-bottom: 5px;
+        
+    }
+
+    /* Stock 2 card */
+    
+
+    .stock-card.sm-stock-content{
+
+        /* display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows:; 
+        justify-content: center;
+        align-items: center; */
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .sm-stock-card{
+        display: flex;
+        margin: 5px;
+        position: relative;
+    }
+    .stock-card .stock-img-container{  
+        max-width: 134px;
+        max-height: 134px;
+        min-width: 90px;
+        min-height: 90px;
+    }
+
+    .stock-card .sm-text-container{
+        margin-right: 5px;
+        margin-left: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .sm-text-container div h3{
+        font-weight: 700;
+        font-size: 20px;
+    }
+    .small-card:first-child{
+        flex-direction: column;
+    }
+    .small-card:nth-child(2){
+        display: flex;
+    }
+    .small-card:nth-child(2) div {
+        display: flex;
+        margin: 5px;
+        font-size: 14px;
+        border: 1px solid #00AC4F;
+        border-radius: 10px;
+        padding: 5px;
+    }
+    .small-card:nth-child(2) div svg{
+        
+        color: #00AC4F;
+        margin-right: 5px;
+        margin-top: 3px;
+    }
+    .small-card:nth-child(2) div p{
+        color: #00AC4F;
+    }
+
+    .small-card:nth-child(2) p:nth-child(3){
+        display: flex;
+        padding: 5px;
+        margin: 5px 0;
+        font-size: 14px;
+        font-weight: 400;
+        color: #757575;
+    }
+    .small-card button{
+        margin: 10px 15px;
+    }
+
+
+    /* Stock 3 card*/
+        
+    .stock-card:last-child{
+        border-left: 1px solid #ECECEC;
+        
+    }
+    
+    .third-card{
+        
+    }
+
+    .third-card h2{
+        margin-left: 10px;
+    }
+    .third-card p:nth-child(2){
+        color: #3D00B7;
+        margin-bottom: ;
+        margin-left: 15px;
+        
+    }
+
+    #top-collections {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        
+    }
+    #top-collections .profile-card{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: start;
+        align-items: center;
+        /* margin: 10px 0; */
+        border-bottom: 1px solid #ECECEC ;
+        padding: 10px 5px;
+
+    }
+    .profile-card:last-child{
+        border: none;
+    }
+    #top-collections .profile-card h3{
+        display: flex;
+        flex-direction: row;
+        padding: 5px 10px;
+        justify-content: start;
+        align-items: center;
+        font-size: 24px;
+        font-weight: 700;
+    }
+    #top-collections .profile-card img.profile-img-xl{
+        height: 50px;
+        width: 50px;
+    }
+    /* for img icon */
+    #top-collections .profile-card img.profile-img-xl{
+        height: 50px;
+        width: 50px;
+    }
+    #top-collections .profile-card h4{
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 103%;
+    }
+    #top-collections .profile-card .child-profile-card{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 5px;
+        /* margin: 10px; */
+        margin-top: 15px;
+        margin-right: 20px;
+    }
+    #top-collections .profile-card .child-profile-card span{
+        flex-direction: row;
+        display: flex;
+        margin-top: 5px ;
+    }
+    #top-collections .profile-card .child-profile-card svg {
+        
+    }
+    #top-collections .profile-card .child-profile-card p{
+        font-size: 14px;
+        color: #636363;
+        font-weight: 600;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+    
+    #top-collections .profile-card div:last-child p{
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    }
+
+
+            /* Collection feature nfts 4 main */
+
+    .collection-feature-nfts{
+        margin: 100px 0;
+        background-color: #D9E0EC33;
+        padding: 20px;
+    }
+    /* h1 text */
+    .collection-feature-nfts div h1{
+        display: flex;
+        justify-content: center;
+        align-items: start;
+    }
+    .collection-feature-nfts .container{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: row;
+        margin-left: 50px;
+        gap: 20px; 
+    }
+    .collection-card{
+        display: flex;
+        flex-direction: column;
+        margin: 30px 0;
+        padding: 10px 0;
+    }
+    .collection-card .grid-images{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .grid-images .card-grid-img{
+        
+    }
+    .grid-images .card-grid-img.main-grid-img{
+        max-width: 265px;
+        max-height: 270px;
+        border-radius: 11px;
+    }
+    .card-grid-img.small-images-container{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        margin-left: 10px ;
+    }
+    .card-small-img{
+        max-width: 100px;
+        max-height: 85px;
+        border-radius: 11px;
+    }
+
+
+    .collection-card .collect-profile-text{
+        padding: 20px 5px;
+    }
+    .collection-card .collect-profile-text .card-collect-profile-text img{
+        width: 32px;
+        height: 32px;
+    }
+    .collect-profile-text .card-collect-profile-text{
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        gap: 5px 10px;
+    }
+    .card-collect-profile-text h4{
+        padding: 0 5px;
+        margin-right: 120px;
+    }
+    .card-collect-profile-text div{
+        
+    }
+
+
+                /* Create and Sell 5 */
+    
+    #create-and-sell{
+        margin: 50px 0;
+    }
+    #create-and-sell .container{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: 600px 500px;
+        margin-left: 50px;
+        gap: 40px;
+    }
+    .create-img-container{
+        display: grid;
+        grid-template-columns: 100px 100px 100px 
+        100px 100px 100px;
+        grid-template-rows: 100px 100px 100px 
+        100px 205px 100px;
+    }
+    .create-img-card{
+        display:;
+        position: relative;
+
+    }
+
+    .create-img-container .create-img-card.large{
+        grid-row-start: 1;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        max-width: 300px;
+        max-height: 300px;
+    }
+    .create-img-card.medium{
+        grid-row: 3/5 ;
+        grid-column: 5/7;
+        max-width: 240px;
+        max-height: 265px;
+    }
+    .create-img-card.small{
+        grid-row: 5 / 6;
+        grid-column: -6 / -4;
+        max-width: 200px;
+        max-height: 215px;
+    }
+
+
+    .create-img-card .profile-pic{
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+    .create-sell-title {
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        flex-direction: column;
+        padding: 10px 0;
+        gap: 40px 0;
+    }
+    .create-sell-title h2{
+        font-size: 3rem;
+        font-weight: 900;
+        line-height: 100%;
+        max-width: 70%;
+        
+    }
+    .create-sell-title p{
+        display: inline-block;
+        font-size: 1.2rem;
+        font-weight: 400;
+
+
+    }
+    .create-sell-title button.btn{
+        padding: 20px 40px;
+        border-radius: 40px;
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    /* Discover More NFT part 6 */
+
+    /* Group */
+    #discover-nft{
+        margin: 50px 0;
+        padding: 20px 0;
+        background-color: #D9E0EC33;
+    }
+    #discover-nft .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    #discover-nft .container h1{
+        color: #000000;
+        font-size: 2rem;
+        font-weight: 900;
+    }
+    #discover-nft .discover-navbar {
+        display: flex;        
+    }
+    #discover-nft .discover-navbar .container-sm{
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        flex-direction: row;  
+        max-width: 1400px;
+        width: 1200px;
+        min-width: none;
+        margin: 20px auto;  
+        padding: 15px 0; 
+    }
+    #discover-nft .discover-navbar .container div button{
+        display: flex;
+    }
+    #discover-nft .discover-navbar .container-sm button:active{
+        
+        opacity: 0.8;
+        background-color: #3D00B7;
+        color: #fff;
+    }
+
+
+    /* cards discover */
+    #discover-nft .cards-nft{
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        align-content: center;
+        flex-direction: row;
+        gap: 30px;
+        flex-wrap: wrap;
+        max-width: 1200px;
+        margin: 30px 0;
+    }
+    .cards-nft .card-nft{
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        flex-direction: column;
+        border: 1px solid #F2F2F280;
+        background-color: #FFFFFF;
+        padding: 10px;
+        border-radius: 15px;
+    }
+    .card-nft .card-nft-imgs{
+        display: flex;
+        max-width: 245px;
+        max-height: 225px;
+        position: relative;
+        margin-bottom: 15px;
+    }
+    .card-nft-imgs div{
+        position: absolute;
+        display: flex;
+        bottom: 0;
+        left: 10px;
+        top: 92%;
+        right: 40%;
+
+    }
+    .card-nft-imgs div img{
+        width: 30px;
+        height: 30px;
+        display: flex;
+    }
+    .card-nft-imgs div img:last-child{
+        margin-right: 20px;
+    }
+    .card-nft .card-nft-text{
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        flex-flow: wrap column;
+        padding-bottom: 10px;
+    }
+    .card-nft-text .sm-card-nft-text{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 240px;
+    }
+    .sm-card-nft-text div{
+        display: flex;
+    }
+    .sm-card-nft-text div p{
+        margin: 0 5px;
+        font-size: 11px;
+        font-weight: 700;
+        color: #00AC4F;
+    }
+    .sm-card-nft-text p.text-sm{
+        color: #838383;
+        font-size: 13px;
+        font-weight: 500;
+    }
+            /* btn card nft */
+    .card-nft .card-nft-btn{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 240px;
+        border-top: 1px solid #F4F4F4;
+        padding: 5px 0;
+    }
+    .card-nft .card-nft-btn .btn{
+        background-color: #F5F5F5;
+        padding: 10px 15px;
+        gap: 10px;
+        color: #5539A8;
+        font-size: 12px;
+        font-weight: 700;
+        border-radius: 109px;
+    }
+    .card-nft-btn p{
+        color: #4F33A3;
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+
+    #more-nft-btn .btn{
+        padding: 20px 40px;
+        border-radius: 50px;
+        border: 2px solid #3D00B7;
+        color: #4F33A3;
+        font-size: 1.25rem;
+        font-weight: 400
+    }
+    
+                 /* Footer 7 main */
+    .nft-footer{
+        padding: 30px 0;
+        margin: 100px 0;
+        margin-bottom: 50px;
+    }
+    .nft-footer .container{
+        display: flex;
+        gap: 50px;
+        max-width: 1200px;
+    }
+
+    .container .footer-card{
+        width: 33.3%;
+    }
+    .footer-card.footer-title {
+        width: 100%;
+    }
+    .footer-title h3.text-xl{
+        font-weight: 800;
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    .footer-title p{
+        max-width: 90%;
+    }
+    .footer-title ul{
+        display: flex;
+        gap: 10px;
+        margin: 20px 0;
+    }
+    .footer-title ul{
+        display: flex;
+        gap: 20px;
+    }
+    .nft-footer .footer-card h4.footer-md-text{
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+    .nft-footer .footer-card:nth-child(2){
+        margin: 10px;
+        padding: 5px;
+    }
+    
+    .nft-footer .footer-card:nth-child(2) ul li{
+        padding: 5px;
+
+    }
+    .nft-footer .footer-card:nth-child(3){
+        margin: 10px 0;
+    }
+
+    .nft-footer .footer-card:nth-child(3) ul li{
+        padding: 5px;
+    }
+    .nft-footer .footer-card:last-child {
+        gap: 10px;
+        width: 80%;
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        gap: 20px 20px;
+        flex-direction: column;
+    }
+    .nft-footer .footer-card:last-child p{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 160%;
+        color: #363639;
+        width: 70%;
+        margin-bottom: 30px;
+    }
+    .nft-footer .footer-card:last-child form{
+        display: flex;
+        border: 1px solid #F1F1F1;
+        border-radius: 45px;
+    }
+    .nft-footer .footer-card:last-child form input{
+        color: #959595;
+        font-size: 12px;
+        font-weight: 400;
+        border: #fff;
+        border-radius: 45px;
+        margin: 0 5px;
+        padding: 0 10px;
+        
+    }
+    .footer-card:last-child form .btn{
+        background: #2639ED;
+        padding: 15px 30px;
+        border-radius: 45px;
+        color: #FFFFFF;
+        
+    }
+
+    .copyright-content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-top: 2px solid #F1F1F1;
+        padding: 20px 0;
+    }
+
+
+
+
+
+    
+
+
+
+/* Uttily Container */
+
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.container-sm{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.btn{
+    border: none;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border-radius: 20px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.btn:hover{
+    opacity: 0.8;
+}
+
+.btn-purple{
+    background-color: var(--purple-color);
+    color: #FFFFFF;
+}
+.btn-light{
+    background-color: #FFFFFF;
+    color: #3D00B7;
+    border: 1px var(--purple-color) solid;
+}
+
+.text-xxl{
+    font-size: 2.5rem;
+    line-height: 1.2;
+    font-weight: 900;
+}
+.text-xl{
+    font-size: 1.8rem;
+    font-weight: 800 ;
+}
+.text-lg{
+    font-size: 1.25rem;
+    font-weight: 700;
+
+}
+.text-md{
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+.text-sm{
+    font-size: 12px;
+    font-weight: 400;
+}
+
+/* text-color */
+.text-color-green{
+    color: #14C8B0;
+    font-size: 20px;
+    width: 600;
+    letter-spacing: -2.0%;
+    text-align: right;
+    /* font-family: "Poppins"; */
+}
+.text-color-red{
+    color: #FF002E;
+    font-size: 20px;
+    width: 600;
+    letter-spacing: -2.0%;
+    text-align: right;
+}
+
+.profile-img-xl{
+    height: 60px;
+    width: 60px;
+}
+.profile-img-lg{
+    height: 48px;
+    width: 48px;
+}
+.profile-img-sm{
+    height: 36px;
+    width: 36px;
+}
