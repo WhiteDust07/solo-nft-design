@@ -262,8 +262,6 @@ nav.navbar .container{
 
     }
     .stock .container{
-
-        
         /* display: grid;
         grid-template-columns: 1fr 0.8fr 1fr;
         grid-template-rows: 1fr;
@@ -524,7 +522,6 @@ nav.navbar .container{
         justify-content: center;
         align-content: center;
         flex-direction: row;
-        margin-left: 50px;
         gap: 20px; 
     }
     .collection-card{
@@ -593,7 +590,6 @@ nav.navbar .container{
         justify-content: center;
         align-items: center;
         grid-template-columns: 600px 500px;
-        margin-left: 50px;
         gap: 40px;
     }
     .create-img-container{
